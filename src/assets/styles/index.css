@@ -96,6 +96,15 @@ ul {
 .sp__desc {
   margin-bottom: 0.75rem;
 }
+.sp__highlight {
+  color: var(--black);
+  transition: 250ms ease-out;
+  cursor: pointer;
+}
+.sp__normal {
+  color: var(--primary);
+  transition: 250ms ease-out;
+}
 .sp__ul {
   text-align: center;
 }
@@ -168,4 +177,43 @@ ul {
 
 .ham__menu-a {
   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+  /* Start Page style begin */
+  .sp-container {
+    padding-top: 2rem;
+  }
+  .sp__name {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .sp__desc {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+  }
+  .sp__li {
+    margin-bottom: 0.75rem;
+  }
+  .sp__a {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  /* Start Page style begin */
+  .sp__name {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+  .sp__desc {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+  }
+  .sp__li {
+    margin-bottom: 1rem;
+  }
+  .sp__a {
+    font-size: 0.875rem;
+  }
 }

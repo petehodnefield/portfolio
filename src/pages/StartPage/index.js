@@ -2,12 +2,23 @@ import React, { useState } from "react";
 
 const StartPage = () => {
   const [name, setName] = useState("Pete Hodnefield");
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="sp-container">
       <h1 className="sp__name">{name}</h1>
       <p className="p1 bold sp__desc">
-        Web Developer &{" "}
         <span
+          className={`${isHovered ? "sp__highlight" : "sp__normal"}`}
+          onMouseOver={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          Web Developer
+        </span>{" "}
+        &{" "}
+        <span
+          className={`${
+            name === "mongamonga_" ? "sp__highlight" : "sp__normal"
+          }`}
           onMouseLeave={() => setName("Pete Hodnefield")}
           onMouseOver={() => setName("mongamonga_")}
         >
