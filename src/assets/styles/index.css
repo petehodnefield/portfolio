@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -72,7 +73,39 @@ ul {
 .btn {
   border-radius: 4px;
 }
-
+.bold {
+  font-weight: bold;
+}
+/* Start Page style begin */
+.sp-container {
+  background: var(--secondary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  flex-direction: column;
+  text-align: center;
+}
+.sp__name {
+  font-family: "Porter Sans Block", sans-serif;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+.sp__desc {
+  margin-bottom: 0.75rem;
+}
+.sp__ul {
+  text-align: center;
+}
+.sp__li {
+  margin-bottom: 0.5rem;
+}
+.sp__a {
+  color: var(--primary);
+  font-size: 0.75rem;
+}
 /* header style begin */
 .h1 {
   font-size: 2rem;

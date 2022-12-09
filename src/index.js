@@ -1,12 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "../src/assets/styles/index.css";
-import Header from "./assets/components/Header";
+import Header from "./components/Header";
+import StartPage from "../src/pages/StartPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header></Header>
+    {/* <Header></Header> */}
+
+    <Router>
+      <Routes>
+        <Route>
+          {" "}
+          <Route path="/" element={<StartPage />} />
+        </Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
