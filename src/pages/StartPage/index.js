@@ -27,7 +27,7 @@ const StartPage = () => {
       </p>
       <ul className="sp__ul">
         <li className="sp__li">
-          <a className="sp__a" href="#">
+          <a className="sp__a" href="/about">
             About
           </a>
         </li>

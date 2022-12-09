@@ -3,18 +3,20 @@ import ReactDOM from "react-dom/client";
 import "../src/assets/styles/index.css";
 import Header from "./components/Header";
 import StartPage from "../src/pages/StartPage";
+import About from "../src/pages/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <Header></Header> */}
+    <Header></Header>
 
     <Router>
       <Routes>
         <Route>
           {" "}
           <Route path="/" element={<StartPage />} />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </Router>
