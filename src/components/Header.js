@@ -17,13 +17,19 @@ const Header = () => {
       <div className={`ham__menu ${isOpen ? "ham__menu-open" : ""}`}>
         <ul className="ham__menu-list">
           <li className="ham__menu-li">
-            <a className="ham__menu-a">About</a>
+            <a href="/about" className="ham__menu-a">
+              About
+            </a>
           </li>
           <li className="ham__menu-li">
-            <a className="ham__menu-a">Projects</a>
+            <a href="/projects" className="ham__menu-a">
+              Projects
+            </a>
           </li>
           <li className="ham__menu-li">
-            <a className="ham__menu-a">Contact</a>
+            <a href="/contact" className="ham__menu-a">
+              Contact
+            </a>
           </li>
         </ul>
       </div>

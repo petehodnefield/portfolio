@@ -32,12 +32,12 @@ const StartPage = () => {
           </a>
         </li>
         <li className="sp__li">
-          <a className="sp__a" href="#">
+          <a className="sp__a" href="/projects">
             Projects
           </a>
         </li>
         <li className="sp__li">
-          <a className="sp__a" href="#">
+          <a className="sp__a" href="/contact">
             Contact
           </a>
         </li>

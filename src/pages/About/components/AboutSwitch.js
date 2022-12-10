@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const AboutSwitch = () => {
-  const [aboutSwitch, setAboutSwitch] = useState(true);
+const AboutSwitch = ({ aboutSwitch, setAboutSwitch }) => {
   return (
     <div className="about-switch-wrapper">
       <div className="about-cylinder-wrapper">

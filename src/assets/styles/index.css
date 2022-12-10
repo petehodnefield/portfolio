@@ -51,6 +51,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--primary);
 }
 ul {
   list-style: none;
@@ -72,6 +73,17 @@ ul {
 }
 .btn {
   border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover {
+  opacity: 0.9;
+  transition: 250ms;
+}
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0 0.75rem;
 }
 .bold {
   font-weight: bold;
@@ -122,7 +134,7 @@ ul {
 .header {
   padding: 2rem 0;
   text-align: center;
-  position: relative;
+  position: sticky;
 }
 .ham {
   display: flex;
@@ -136,7 +148,7 @@ ul {
 }
 .ham__open {
   transform: rotate(90deg);
-  z-index: 2;
+  z-index: 10000;
 }
 .ham__line {
   height: 0.225rem;
@@ -149,8 +161,9 @@ ul {
 .ham__menu {
   display: none;
   background: var(--secondary);
-  position: absolute;
+  position: fixed;
   top: 0;
+  z-index: 4;
   width: 100vw;
   height: 100vh;
 }
@@ -180,6 +193,9 @@ ul {
 }
 
 /* About style begin */
+.about-wrapper {
+  margin: 0 1rem;
+}
 .about-switch-wrapper {
   display: flex;
   justify-content: center;
@@ -191,38 +207,200 @@ ul {
   margin-right: 0.5rem;
 }
 .about__cylinder {
-  height: 1.5rem;
-  width: 4rem;
+  height: 1.125rem;
+  width: 2.75rem;
   background: var(--secondary);
   border-radius: 100vmax;
   display: flex;
   align-items: center;
 }
-.about__cylinder-left {
+.about__cylinder-right {
   justify-content: flex-start;
   border: 1px solid var(--black);
 }
-.about__cylinder-right {
+.about__cylinder-left {
   justify-content: flex-end;
   border: 1px solid var(--black);
   background: var(--primary);
 }
 .about__circle {
-  height: 1.4rem;
-  width: 1.4rem;
+  height: 1.1rem;
+  width: 1.1rem;
   border-radius: 50%;
   cursor: pointer;
 }
-.about__circle-left {
-  background: var(--primary);
-  margin-left: 0.2rem;
-}
 .about__circle-right {
+  background: var(--primary);
+  margin-left: 0.1rem;
+}
+.about__circle-left {
   background: var(--secondary);
-  margin-right: 0.2rem;
+  margin-right: 0.1rem;
+}
+.about-header-wrapper {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.about__header {
+  margin-bottom: 0.5rem;
+}
+.about-skills-photo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 1rem 0;
+  align-items: flex-start;
+}
+.about-prod-skills-photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 1rem 0;
+  gap: 4rem;
+  align-items: flex-start;
+}
+.skills-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.skills-list-wrapper {
+  display: flex;
+  margin-top: 0.25rem;
+  gap: 2rem;
+}
+.skills__ul {
+  text-align: left;
+  color: var(--primary);
+}
+.skills__li {
+  margin-bottom: 0.125rem;
+}
+.skills__front-end,
+.skills__back-end {
+  border-radius: 4px;
+  padding: 0.2rem 0.75rem;
+}
+.skills__front-end {
+  background: var(--accent1);
+}
+.skills__back-end {
+  background: var(--accent2);
+}
+.about-image-icons-wrapper {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.5rem;
+  padding-top: 1.5rem;
+}
+.about-image-wrapper {
+  max-width: 5.5rem;
+}
+.about__img {
+  height: 9rem;
+  width: 100%;
+  object-fit: cover;
+}
+.about-icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.125rem;
+}
+.about__text {
+  margin-bottom: 0.5rem;
+}
+.about__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--black);
+}
+.about__icon:hover {
+  color: var(--secondary);
+  transition: 250ms;
+  cursor: pointer;
 }
 
+.projects-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+.project__header {
+  margin-bottom: 0.5rem;
+}
+.project-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(1, fr);
+  gap: 1rem;
+  justify-items: center;
+}
+.project__card {
+  background: var(--secondary);
+  color: var(--primary);
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+}
+.project__card-name {
+  position: absolute;
+  bottom: 0.5rem;
+}
+.project__card-icon {
+  height: 4rem;
+  width: 4rem;
+}
+.project-modal-small-wrapper {
+  z-index: 1;
+  background: var(--primary);
+  color: var(--black);
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  animation: modal-flip 250ms;
+  border: 1px solid var(--black);
+}
+@keyframes modal-flip {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.project-modal-text-wrapper {
+  padding: 0.75rem;
+  position: relative;
+}
+.project-modal-icon {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+.project-modal-icon:hover {
+  color: var(--secondary);
+  transition: 175ms ease-out;
+}
+.project-modal__header {
+  margin-bottom: 0.5rem;
+}
+.project-modal__description {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.project-modal__img {
+  width: 100%;
+  height: 100%;
+}
 /* Media queries begin */
+
 @media (min-width: 768px) {
   /* Start Page style begin */
   .sp-container {
