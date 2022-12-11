@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "../src/assets/styles/index.css";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import StartPage from "../src/pages/StartPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
