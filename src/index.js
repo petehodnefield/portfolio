@@ -4,6 +4,7 @@ import "../src/assets/styles/index.css";
 import Header from "./components/Header";
 import StartPage from "../src/pages/StartPage";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import ProjectsFull from "../src/pages/ProjectsFull";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -17,8 +18,9 @@ root.render(
         <Route>
           {" "}
           <Route path="/" element={<StartPage />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<ProjectsFull />} />
+          <Route path="/projects/:project" element={<ProjectsFull />} />
         </Route>
       </Routes>
     </Router>
