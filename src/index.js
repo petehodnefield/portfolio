@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProjectsFull from "../src/pages/ProjectsFull";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ThankYou from "./pages/ThankYou.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,6 +20,7 @@ root.render(
           {" "}
           <Route path="/" element={<StartPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects/:project" element={<ProjectsFull />} />
         </Route>

@@ -20,6 +20,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    window.location.assign("/thank-you");
   };
   return (
     <div className="contact-form-wrapper">
