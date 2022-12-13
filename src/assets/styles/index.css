@@ -109,9 +109,22 @@ ul {
   color: var(--primary);
   margin-bottom: 0.25rem;
   font-size: 1.5rem;
+  animation: start-page 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes start-page {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .sp__desc {
   margin-bottom: 0.75rem;
+  animation: start-page 2000ms ease-in;
 }
 .sp__highlight {
   color: var(--black);
@@ -124,6 +137,7 @@ ul {
 }
 .sp__ul {
   text-align: center;
+  animation: start-page 3000ms ease-in;
 }
 .sp__li {
   margin-bottom: 0.5rem;
@@ -379,7 +393,6 @@ ul {
   align-items: center;
   position: relative;
   cursor: pointer;
-  position: relative;
 }
 .project__card-music {
   color: var(--primary);
@@ -779,6 +792,9 @@ ul {
     text-align: left;
   }
   .ham {
+    display: none;
+  }
+  .ham__menu {
     display: none;
   }
   .nav-links-wrapper {

@@ -2,29 +2,12 @@ import React, { useState } from "react";
 import Header from "../../components/Header/Header.js";
 
 const StartPage = () => {
-  const [name, setName] = useState("Pete Hodnefield");
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="sp-container">
-      <h1 className="sp__name">{name}</h1>
+      <h1 className="sp__name">Pete Hodnefield</h1>
       <p className="p1 bold sp__desc">
-        <span
-          className={`${isHovered ? "sp__highlight" : "sp__normal"}`}
-          onMouseOver={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          Web Developer
-        </span>{" "}
-        &{" "}
-        <span
-          className={`${
-            name === "mongamonga_" ? "sp__highlight" : "sp__normal"
-          }`}
-          onMouseLeave={() => setName("Pete Hodnefield")}
-          onMouseOver={() => setName("mongamonga_")}
-        >
-          Music Producer
-        </span>
+        <span className="sp__normal">Web Developer</span> &{" "}
+        <span className="sp__normal">Music Producer</span>
       </p>
       <ul className="sp__ul">
         <li className="sp__li">

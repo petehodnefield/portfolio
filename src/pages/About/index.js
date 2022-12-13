@@ -6,6 +6,7 @@ import WebAbout from "./components/WebAbout/index";
 
 const About = () => {
   const [aboutSwitch, setAboutSwitch] = useState(false);
+
   return (
     <div>
       <Header></Header>
