@@ -18,8 +18,8 @@ const ProjectModalSmall = ({ selectedProject }) => {
               icon="material-symbols:open-in-full-rounded"
             />
           </a>
-          <h5 className="project-modal__header">{selectedProject.name}</h5>
-          <p className="p4 project-modal__description ">
+          <h4 className="project-modal__header">{selectedProject.name}</h4>
+          <p className="p3 project-modal__description ">
             {selectedProject.description}
           </p>
           <img className="project-modal__img" src={selectedProject.image} />

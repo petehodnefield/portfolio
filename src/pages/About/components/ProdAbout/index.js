@@ -7,13 +7,13 @@ import PeteImgProd from "../../../../components/PeteImgProd";
 const ProdAbout = () => {
   return (
     <div className="about-wrapper">
-      <AboutDesc></AboutDesc>
-      <div className="about-prod-skills-photo-wrapper">
-        <Skills></Skills>
+      <div className="about-content-wrapper">
+        <div className="wrapper">
+          <AboutDesc></AboutDesc>
+          <Skills></Skills>
+        </div>
+        <PeteImgProd className="about-img-wrapper"></PeteImgProd>
       </div>
-      <PeteImgProd className="about-img-wrapper"></PeteImgProd>
-
-      <ProjectsSmall></ProjectsSmall>
     </div>
   );
 };

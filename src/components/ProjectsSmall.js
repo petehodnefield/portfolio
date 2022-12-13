@@ -9,7 +9,7 @@ const ProjectsSmall = () => {
   console.log(selectedModal);
   return (
     <section className="projects-wrapper">
-      <h4 className="project__header">Projects</h4>
+      <h3 className="project__header-about">Projects</h3>
       <div className="project-cards-grid">
         {projectData.map((project) => (
           <div

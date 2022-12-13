@@ -7,11 +7,13 @@ import PeteImgWeb from "../../../../components/PeteImgWeb";
 const WebAbout = () => {
   return (
     <div className="about-wrapper">
-      <div>
-        <AboutDesc></AboutDesc>
-        <Skills></Skills>
+      <div className="about-content-wrapper">
+        <div className="wrapper">
+          <AboutDesc></AboutDesc>
+          <Skills></Skills>
+        </div>
+        <PeteImgWeb className="about-img-wrapper"></PeteImgWeb>
       </div>
-      <PeteImgWeb className="about-img-wrapper"></PeteImgWeb>
       <ProjectsSmall></ProjectsSmall>
     </div>
   );

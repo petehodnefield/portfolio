@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "../../components/Header/Header.js";
 
 const StartPage = () => {
   const [name, setName] = useState("Pete Hodnefield");

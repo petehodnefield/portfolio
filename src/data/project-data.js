@@ -32,6 +32,8 @@ export const projectData = [
       "CSS",
       "HTML",
       "Express.js",
+      "MySQL",
+      "Sequelize",
       "AWS S3",
     ],
   },

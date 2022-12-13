@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import Header from "../../components/Header/Header";
 import ProjectsGrid from "../../components/ProjectsGrid";
 import { projectData } from "../../data/project-data";
 import ProjectData from "./components/ProjectData";
@@ -22,6 +23,7 @@ const ProjectsFull = () => {
 
   return (
     <div>
+      <Header></Header>
       {!project ? (
         <div>Loading...</div>
       ) : (
