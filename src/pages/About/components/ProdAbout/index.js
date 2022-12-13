@@ -4,6 +4,7 @@ import AboutDesc from "./components/AboutDesc";
 import Skills from "./components/Skills";
 import ProjectsSmall from "../../../../components/ProjectsSmall";
 import PeteImgProd from "../../../../components/PeteImgProd";
+import MusicProjects from "../../../../components/MusicProjects";
 const ProdAbout = () => {
   return (
     <div className="about-wrapper">
@@ -14,6 +15,7 @@ const ProdAbout = () => {
         </div>
         <PeteImgProd className="about-img-wrapper"></PeteImgProd>
       </div>
+      <MusicProjects></MusicProjects>
     </div>
   );
 };
