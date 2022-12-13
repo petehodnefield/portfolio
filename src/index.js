@@ -8,6 +8,7 @@ import ProjectsFull from "../src/pages/ProjectsFull";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ThankYou from "./pages/ThankYou.js";
 import ProjectPage from "./pages/ProjectPage";
+import NotFound from "./pages/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/projects/:project" element={<ProjectsFull />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

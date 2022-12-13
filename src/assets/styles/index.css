@@ -222,6 +222,9 @@ ul {
   display: none;
 }
 /* About style begin */
+.about-content-wrapper {
+  margin-bottom: 2rem;
+}
 .about-wrapper {
   margin: 0 1rem 2rem;
 }
@@ -352,7 +355,6 @@ ul {
 
 .projects-wrapper {
   text-align: center;
-  margin-top: 4rem;
 }
 .project__header-about {
   margin-bottom: 0.5rem;
@@ -724,6 +726,7 @@ ul {
     justify-content: center;
     align-items: flex-start;
     gap: 4rem;
+    margin-bottom: 6rem;
   }
   .about-image-icons-wrapper .about-icon-wrapper {
     justify-content: center;
@@ -823,6 +826,28 @@ ul {
   }
   .about-wrapper {
     margin: 0 6rem 2rem;
+  }
+
+  .about-image-wrapper {
+    max-width: 14rem;
+  }
+  .about__img {
+    height: 20rem;
+  }
+  .about__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .project__card-name {
+    font-size: 1.25rem;
+  }
+  .project__card,
+  .project__card-music {
+    height: 20rem;
+  }
+  .project__card-icon {
+    height: 5rem;
+    width: 5rem;
   }
 }
 @media screen and (min-width: 1440px) {

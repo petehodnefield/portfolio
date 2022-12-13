@@ -7,7 +7,7 @@ const AboutDesc = () => {
       <div className="about-header-wrapper">
         <h4 className="about__header">About Me</h4>
       </div>
-      <p className="p3 about__text">
+      <p className="p2 about__text">
         Expert guitarist and melody writer whose original guitar works has
         millions of views on TikTok. Specializes in providing hip-hop producers
         with high-quality guitar loops. Previously studied audio engineering and

@@ -8,10 +8,18 @@ const ProjectData = ({ project }) => {
         <h3 className="project__sub-header">{project.logLine}</h3>
         <p className="p3 project__text">{project.description}</p>
         <div className="project-button-wrapper">
-          <a className="project__deploy-link" href={project.repository}>
+          <a
+            className="project__deploy-link"
+            target="_blank"
+            href={project.repository}
+          >
             <button className="btn btn-secondary btn-deploy">Repository</button>
           </a>
-          <a className="project__link" href={project.liveDeployment}>
+          <a
+            className="project__link"
+            target="_blank"
+            href={project.liveDeployment}
+          >
             <button className="btn btn-secondary btn-deploy">Live</button>
           </a>
         </div>

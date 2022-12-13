@@ -12,7 +12,7 @@ const AboutDesc = () => {
           </a>
         </button>
       </div>
-      <p className="p3 about__text">
+      <p className="p2 about__text">
         I am a full-stack web developer utilizing a background in Audio
         Engineering and Psychology to help build practical applications and
         services for musicians. I earned a certificate in full stack web
