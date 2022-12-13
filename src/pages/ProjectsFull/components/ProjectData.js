@@ -32,8 +32,8 @@ const ProjectData = ({ project }) => {
           </ul>
         </div>
       </div>
-      <div className="project-img-wrapper">
-        <img className="project__img" src={project.image} />
+      <div className="project-img-wrapper bshadow">
+        <img className="project__img " src={project.image} />
       </div>
     </section>
   );

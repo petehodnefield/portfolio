@@ -89,6 +89,10 @@ ul {
 .bold {
   font-weight: bold;
 }
+.bshadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 /* Start Page style begin */
 .sp-container {
   background: var(--secondary);
@@ -461,11 +465,11 @@ ul {
 
 /* Project style begin */
 .project-data-wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.project-text-wrapper {
-  margin: 0 1rem;
-}
+
 .project__header {
   font-size: 2rem;
   margin-bottom: 0.25rem;
@@ -503,10 +507,10 @@ ul {
 }
 .project-img-wrapper {
   margin: 1.5rem 1rem 1rem;
-  overflow: scroll;
   position: relative;
   /* height: 20rem; */
-  overflow-y: scroll;
+  overflow: hidden;
+  max-height: 20rem;
 }
 .project__img {
   width: 100%;
@@ -534,6 +538,7 @@ ul {
   margin-top: 2rem;
 }
 .project-grid-cards-grid {
+  width: 100%;
   display: grid;
   justify-items: center;
   gap: 1rem;
@@ -545,7 +550,7 @@ ul {
   height: 15rem;
   display: flex;
   justify-content: center;
-  width: 10rem;
+  width: 100%;
   align-items: center;
   position: relative;
   cursor: pointer;
@@ -556,22 +561,21 @@ ul {
 }
 @media (min-width: 768px) {
   .project-data-wrapper {
-    display: flex;
+    flex-direction: row;
   }
-  .project-text-wrapper {
+  /* .project-text-wrapper {
     margin: 0 2rem;
-  }
+  } */
 
   .project-img-wrapper {
     margin: 1.5rem 2rem 1rem;
   }
   .project-grid-cards-grid {
     grid-template-columns: repeat(3, 1fr);
-    width: 60%;
+    width: 100%;
   }
   .project-grid__card {
     width: 100%;
-    height: 12rem;
   }
 }
 
@@ -755,6 +759,9 @@ ul {
   .skills__back-end {
     font-size: 0.75rem;
   }
+  .project-data-wrapper {
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 1080px) {
@@ -762,7 +769,7 @@ ul {
   .header {
     display: flex;
     justify-content: space-between;
-    margin: 0 4em;
+    margin: 0 4rem 1rem;
     align-items: center;
   }
   .h1 {
@@ -821,8 +828,11 @@ ul {
   .sp__a {
     font-size: 0.875rem;
   }
+  .project-data-wrapper {
+    gap: 4rem;
+  }
   .projects-pg-grid-wrapper {
-    margin: 2rem 14rem;
+    margin: 4rem 14rem;
   }
   .about-wrapper {
     margin: 0 6rem 2rem;
@@ -849,8 +859,23 @@ ul {
     height: 5rem;
     width: 5rem;
   }
+  .project-grid-cards-grid {
+    width: 80%;
+  }
+  .project-grid__card {
+    height: 20rem;
+  }
+  .project__ul {
+    width: 25rem;
+  }
 }
 @media screen and (min-width: 1440px) {
+  .header {
+    margin: 0 6rem 1rem;
+  }
+  .nav__ul {
+    width: 40%;
+  }
   .about-wrapper {
     margin: 0 10rem 2rem;
   }
@@ -861,5 +886,11 @@ ul {
   }
   .project-cards-grid {
     width: 80%;
+  }
+  .projects-pg-grid-wrapper {
+    margin: 4rem 20rem;
+  }
+  .project-img-wrapper {
+    max-height: 30rem;
   }
 }

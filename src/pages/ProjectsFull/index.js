@@ -23,13 +23,16 @@ const ProjectsFull = () => {
 
   return (
     <div>
+      {" "}
       <Header></Header>
-      {!project ? (
-        <div>Loading...</div>
-      ) : (
-        <ProjectData project={project}></ProjectData>
-      )}
-      <ProjectsGrid chosenProject={chosenProject.project}></ProjectsGrid>
+      <div className="about-wrapper">
+        {!project ? (
+          <div>Loading...</div>
+        ) : (
+          <ProjectData project={project}></ProjectData>
+        )}
+        <ProjectsGrid chosenProject={chosenProject.project}></ProjectsGrid>
+      </div>
     </div>
   );
 };

@@ -25,7 +25,7 @@ const ProjectsGridPg = ({ chosenProject }) => {
                 setModalOpen(true);
               }}
               onMouseLeave={() => setModalOpen(false)}
-              className="project-grid__card"
+              className="project-grid__card bshadow"
             >
               {modalOpen && selectedModal === project.name ? (
                 <ProjectModalSmall

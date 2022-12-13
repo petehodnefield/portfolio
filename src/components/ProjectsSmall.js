@@ -22,7 +22,7 @@ const ProjectsSmall = () => {
               setModalOpen(true);
             }}
             onMouseLeave={() => setModalOpen(false)}
-            className="project__card"
+            className="project__card bshadow"
           >
             {modalOpen && selectedModal === project.name ? (
               <ProjectModalSmall selectedProject={project}></ProjectModalSmall>
