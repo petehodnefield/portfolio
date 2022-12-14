@@ -77,6 +77,9 @@ ul {
   cursor: pointer;
   border: none;
 }
+.nav__a {
+  color: var(--black);
+}
 .btn:hover {
   opacity: 0.9;
   transition: 250ms;
@@ -97,6 +100,10 @@ ul {
 .sp-container {
   background: var(--secondary);
   height: 100vh;
+  z-index: 100;
+  position: absolute;
+  width: 100vw;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,9 +116,36 @@ ul {
   color: var(--primary);
   margin-bottom: 0.25rem;
   font-size: 1.5rem;
-  animation: start-page 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  animation: start-page-name 1000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-@keyframes start-page {
+.sp__header-wrapper {
+  /* animation: header-wrapper 2000ms ease-in-out; */
+  animation: animation-breathing 5000ms infinite 3000ms,
+    header-wrapper 2500ms ease-in-out;
+}
+@keyframes animation-breathing {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(102%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+@keyframes header-wrapper {
+  0% {
+    transform: translateY(2rem);
+  }
+  80% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes start-page-name {
   0% {
     opacity: 0;
   }
@@ -122,9 +156,37 @@ ul {
     opacity: 1;
   }
 }
+@keyframes start-page-desc {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes start-page-list {
+  0% {
+    opacity: 0;
+    transform: translateY(-7rem);
+    display: none;
+  }
+
+  85% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: perspective(17px);
+  }
+}
 .sp__desc {
   margin-bottom: 0.75rem;
-  animation: start-page 2000ms ease-in;
+  animation: start-page-desc 2000ms ease-in;
 }
 .sp__highlight {
   color: var(--black);
@@ -137,14 +199,23 @@ ul {
 }
 .sp__ul {
   text-align: center;
-  animation: start-page 3000ms ease-in;
+  /* display: none; */
+  animation: start-page-list 2500ms ease-in;
 }
 .sp__li {
   margin-bottom: 0.5rem;
 }
+
 .sp__a {
   color: var(--primary);
   font-size: 0.75rem;
+}
+.sp__selected {
+  color: var(--secondary);
+  background: var(--primary);
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  transition: 125ms ease-in-out;
 }
 /* header style begin */
 .h1 {
@@ -811,11 +882,10 @@ ul {
     grid-template-columns: repeat(4, 1fr);
     width: 50%;
   }
-  .nav__a {
-    color: var(--black);
-  }
+
   .selected {
     color: var(--secondary);
+    transition: 100ms ease-in;
   }
   .nav__resume-wrapper {
     flex-grow: 1;

@@ -5,7 +5,6 @@ import ProjectsGridPg from "../../components/ProjectsGridPg";
 const ProjectPage = () => {
   return (
     <div>
-      <Header></Header>
       <ProjectsGridPg></ProjectsGridPg>
     </div>
   );

@@ -25,7 +25,6 @@ const Contact = () => {
   };
   return (
     <div>
-      <Header></Header>
       <div className="contact-form-wrapper">
         <h3 className="form__header">Contact Me</h3>
         <form

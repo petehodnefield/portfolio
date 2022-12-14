@@ -9,7 +9,6 @@ const About = () => {
 
   return (
     <div>
-      <Header></Header>
       <AboutSwitch
         aboutSwitch={aboutSwitch}
         setAboutSwitch={setAboutSwitch}

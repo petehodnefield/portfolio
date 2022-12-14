@@ -9,11 +9,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ThankYou from "./pages/ThankYou.js";
 import ProjectPage from "./pages/ProjectPage";
 import NotFound from "./pages/NotFound";
+import Header from "./components/Header/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+      <Header></Header>
       <Routes>
         <Route>
           {" "}

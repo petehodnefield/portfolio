@@ -5,6 +5,8 @@ import NavLinks from "./components/NavLinks";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [pageSelected, setPageSelected] = useState("");
+
   return (
     <header className="header">
       <h1 className="h1">
@@ -14,7 +16,10 @@ const Header = () => {
       </h1>
       <HamIcon isOpen={isOpen} setIsOpen={setIsOpen}></HamIcon>
       <HamMenu isOpen={isOpen}></HamMenu>
-      <NavLinks></NavLinks>
+      <NavLinks
+        pageSelected={pageSelected}
+        setPageSelected={setPageSelected}
+      ></NavLinks>
     </header>
   );
 };

@@ -1,41 +1,54 @@
 import React, { useState } from "react";
 
-const NavLinks = () => {
-  const [pageSelected, setPageSelected] = useState("");
+import { Link } from "react-router-dom";
+const NavLinks = ({ pageSelected, setPageSelected }) => {
+  console.log(pageSelected);
+  const [resumeHover, setResumeHover] = useState(false);
 
   console.log(pageSelected);
   return (
     <div className="nav-links-wrapper">
       <ul className="nav__ul">
         <li className="nav__li">
-          <a
+          <Link
+            onClick={() => setPageSelected("About")}
             className={`nav__a p3 ${
-              pageSelected === "About?" ? "selected" : ""
+              pageSelected === "About" ? "selected" : ""
             }`}
-            href="/about"
+            to="/about"
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="nav__li">
-          <a
-            onClick={() => setPageSelected("projects")}
-            className="nav__a p3"
-            href="/projects"
+          <Link
+            onClick={() => setPageSelected("Projects")}
+            className={`nav__a p3 ${
+              pageSelected === "Projects" ? "selected" : ""
+            }`}
+            to="/projects"
           >
             Projects
-          </a>
+          </Link>
         </li>
         <li className="nav__li">
-          <a className="nav__a p3" href="/contact">
+          <Link
+            onClick={() => setPageSelected("Contact")}
+            className={`nav__a p3 ${
+              pageSelected === "Contact" ? "selected" : ""
+            }`}
+            to="/contact"
+          >
             Contact
-          </a>
+          </Link>
         </li>
         <li className="nav__li">
           <a
-            className="nav__a p3"
+            className={`nav__a p3 ${resumeHover ? "selected" : ""}`}
             download
             href={require("../../../assets/resume.pdf")}
+            onMouseEnter={() => setResumeHover(true)}
+            onMouseLeave={() => setResumeHover(false)}
           >
             Resume
           </a>
