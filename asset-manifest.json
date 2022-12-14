@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.321a9a2f.css",
+    "main.js": "/portfolio/static/js/main.778a3dc7.js",
+    "static/media/tiktok.png": "/portfolio/static/media/tiktok.7596190a6671686d8a16.png",
+    "static/media/airbit.png": "/portfolio/static/media/airbit.324240a033bede307c25.png",
+    "static/media/meloroids-img.png": "/portfolio/static/media/meloroids-img.bbe800c3be4ebf7ec304.png",
+    "static/media/headshot.jpg": "/portfolio/static/media/headshot.efcc33f2a62ddf0b5532.jpg",
+    "static/media/weather-img.jpg": "/portfolio/static/media/weather-img.73491f9ce0783bb1e9b5.jpg",
+    "static/media/beat-store.jpg": "/portfolio/static/media/beat-store.a1585d455d7ae90a4d38.jpg",
+    "static/media/SIWO.png": "/portfolio/static/media/SIWO.2ac924a17989345e08ff.png",
+    "static/media/nba-img.jpg": "/portfolio/static/media/nba-img.8a215667215e7dcc38d3.jpg",
+    "static/media/unleashed.jpg": "/portfolio/static/media/unleashed.f4d3743713cf7137a4bb.jpg",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.b642898d3318395d9996.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.321a9a2f.css.map": "/portfolio/static/css/main.321a9a2f.css.map",
+    "main.778a3dc7.js.map": "/portfolio/static/js/main.778a3dc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.321a9a2f.css",
+    "static/js/main.778a3dc7.js"
+  ]
+}
