@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Header from "../../components/Header/Header";
 const Contact = () => {
+  const [isOpen, setIsOpen] = useState();
   const form = useRef();
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -25,6 +26,7 @@ const Contact = () => {
   };
   return (
     <div>
+      <Header isOpen={isOpen} setIsOpen={setIsOpen}></Header>
       <div className="contact-form-wrapper">
         <h3 className="form__header">Contact Me</h3>
         <form

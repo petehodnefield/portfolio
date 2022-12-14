@@ -2,13 +2,19 @@ import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import { projectData } from "../data/project-data";
 import ProjectModalSmall from "./ProjectModalSmall";
+import { useWindowDimensions } from "./utils/WindowDimesions";
 
-const ProjectsGridPg = ({ chosenProject }) => {
+const ProjectsGridPg = ({ chosenProject, isOpen, setIsOpen }) => {
   const [modalOpen, setModalOpen] = useState();
   const [selectedModal, setSelectedModal] = useState();
+  const currentWidth = useWindowDimensions();
 
   return (
-    <section className="projects-pg-grid-wrapper">
+    <section
+      className={`projects-pg-grid-wrapper ${
+        isOpen && currentWidth <= 1080 ? "zindexState" : ""
+      }`}
+    >
       <h3 className="project-pg-grid__header">Projects</h3>
       <div className="project-pg-grid">
         {projectData.map((project) =>

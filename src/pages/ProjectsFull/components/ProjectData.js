@@ -1,8 +1,15 @@
 import React from "react";
+import { useWindowDimensions } from "../../../components/utils/WindowDimesions";
 
-const ProjectData = ({ project }) => {
+const ProjectData = ({ project, isOpen, setIsOpen }) => {
+  const currentWidth = useWindowDimensions();
+
   return (
-    <section className="project-data-wrapper">
+    <section
+      className={`project-data-wrapper ${
+        isOpen && currentWidth <= 1080 ? "zindexState" : ""
+      }`}
+    >
       <div className="project-text-wrapper">
         <h2 className="project__header">{project.name}</h2>
         <h3 className="project__sub-header">{project.logLine}</h3>

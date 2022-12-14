@@ -3,8 +3,7 @@ import HamIcon from "./components/HamIcon";
 import { HamMenu } from "./components/HamMenu";
 import NavLinks from "./components/NavLinks";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Header = ({ isOpen, setIsOpen }) => {
   const [pageSelected, setPageSelected] = useState("");
 
   return (

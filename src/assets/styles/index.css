@@ -8,6 +8,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: auto;
 }
 body {
   margin: 0;
@@ -727,6 +728,7 @@ ul {
   padding-top: 3rem;
   flex-direction: column;
 }
+
 /* ?project page full style begin  */
 .project-pg-grid {
   display: grid;
@@ -744,6 +746,9 @@ ul {
 }
 .project-pg-grid__header {
   margin-bottom: 0.5rem;
+}
+.zindexState {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .contact-form-wrapper {

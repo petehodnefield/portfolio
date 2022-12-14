@@ -1,9 +1,9 @@
 import React from "react";
 import { musicData } from "../data/music-data";
 import { Icon } from "@iconify/react";
-const MusicProjects = () => {
+const MusicProjects = ({ isOpen, setIsOpen }) => {
   return (
-    <section className="projects-wrapper">
+    <section className={`projects-wrapper ${isOpen ? "zindexState" : ""}`}>
       <h3 className="project__header-about">Projects</h3>
       <div className="project-cards-grid">
         {musicData.map((project) => (

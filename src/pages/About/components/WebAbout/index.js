@@ -4,7 +4,7 @@ import AboutDesc from "./components/AboutDesc";
 import Skills from "./components/Skills";
 import ProjectsSmall from "../../../../components/ProjectsSmall";
 import PeteImgWeb from "../../../../components/PeteImgWeb";
-const WebAbout = () => {
+const WebAbout = ({ isOpen, setIsOpen }) => {
   return (
     <div className="about-wrapper">
       <div className="about-content-wrapper">
@@ -14,7 +14,7 @@ const WebAbout = () => {
         </div>
         <PeteImgWeb className="about-img-wrapper"></PeteImgWeb>
       </div>
-      <ProjectsSmall></ProjectsSmall>
+      <ProjectsSmall isOpen={isOpen} setIsOpen={setIsOpen}></ProjectsSmall>
     </div>
   );
 };

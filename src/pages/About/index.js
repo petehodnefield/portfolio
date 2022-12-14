@@ -6,14 +6,20 @@ import WebAbout from "./components/WebAbout/index";
 
 const About = () => {
   const [aboutSwitch, setAboutSwitch] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="container">
+      <Header isOpen={isOpen} setIsOpen={setIsOpen}></Header>
       <AboutSwitch
         aboutSwitch={aboutSwitch}
         setAboutSwitch={setAboutSwitch}
       ></AboutSwitch>
-      {!aboutSwitch ? <WebAbout></WebAbout> : <ProdAbout></ProdAbout>}
+      {!aboutSwitch ? (
+        <WebAbout isOpen={isOpen} setIsOpen={setIsOpen}></WebAbout>
+      ) : (
+        <ProdAbout isOpen={isOpen} setIsOpen={setIsOpen}></ProdAbout>
+      )}
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { projectData } from "../../data/project-data";
 import ProjectData from "./components/ProjectData";
 
 const ProjectsFull = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const chosenProject = useParams();
   const projectName = chosenProject.project;
   const [project, setProject] = useState();
@@ -23,15 +24,22 @@ const ProjectsFull = () => {
 
   return (
     <div>
-      {" "}
-      <Header></Header>
+      <Header isOpen={isOpen} setIsOpen={setIsOpen}></Header>{" "}
       <div className="about-wrapper">
         {!project ? (
           <div>Loading...</div>
         ) : (
-          <ProjectData project={project}></ProjectData>
+          <ProjectData
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            project={project}
+          ></ProjectData>
         )}
-        <ProjectsGrid chosenProject={chosenProject.project}></ProjectsGrid>
+        <ProjectsGrid
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          chosenProject={chosenProject.project}
+        ></ProjectsGrid>
       </div>
     </div>
   );

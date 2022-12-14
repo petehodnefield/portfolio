@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 import ProjectsSmall from "../../../../components/ProjectsSmall";
 import PeteImgProd from "../../../../components/PeteImgProd";
 import MusicProjects from "../../../../components/MusicProjects";
-const ProdAbout = () => {
+const ProdAbout = ({ isOpen, setIsOpen }) => {
   return (
     <div className="about-wrapper">
       <div className="about-content-wrapper">
@@ -15,7 +15,7 @@ const ProdAbout = () => {
         </div>
         <PeteImgProd className="about-img-wrapper"></PeteImgProd>
       </div>
-      <MusicProjects></MusicProjects>
+      <MusicProjects isOpen={isOpen} setIsOpen={setIsOpen}></MusicProjects>
     </div>
   );
 };
