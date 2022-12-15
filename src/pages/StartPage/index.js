@@ -43,7 +43,7 @@ const StartPage = () => {
             onMouseOver={() => setIsFocused("Contact")}
             onMouseLeave={() => setIsFocused("")}
             className={`sp__a ${isFocused === "Contact" ? "sp__selected" : ""}`}
-            to="/portfolio/contact"
+            to="/contact"
           >
             Contact
           </Link>
