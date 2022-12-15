@@ -1,23 +1,23 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export const HamMenu = ({ isOpen }) => {
   return (
     <div className={`ham__menu ${isOpen ? "ham__menu-open" : ""}`}>
       <ul className="ham__menu-list">
         <li className="ham__menu-li">
-          <a href="/about" className="ham__menu-a">
+          <Link to="/about" className="ham__menu-a">
             About
-          </a>
+          </Link>
         </li>
         <li className="ham__menu-li">
-          <a href="/projects" className="ham__menu-a">
+          <Link to="/projects" className="ham__menu-a">
             Projects
-          </a>
+          </Link>
         </li>
         <li className="ham__menu-li">
-          <a href="/contact" className="ham__menu-a">
+          <Link to="/contact" className="ham__menu-a">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../../components/Header/Header.js";
+import { Link } from "react-router-dom";
 
 const StartPage = () => {
   const [isFocused, setIsFocused] = useState("");
@@ -18,34 +19,34 @@ const StartPage = () => {
           onMouseLeave={() => setIsFocused("")}
           className="sp__li"
         >
-          <a
+          <Link
             className={`sp__a ${isFocused === "About" ? "sp__selected" : ""}`}
-            href="/about"
+            to="/about"
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="sp__li">
-          <a
+          <Link
             onMouseOver={() => setIsFocused("Projects")}
             onMouseLeave={() => setIsFocused("")}
             className={`sp__a ${
               isFocused === "Projects" ? "sp__selected" : ""
             }`}
-            href="/projects"
+            to="/projects"
           >
             Projects
-          </a>
+          </Link>
         </li>
         <li className="sp__li">
-          <a
+          <Link
             onMouseOver={() => setIsFocused("Contact")}
             onMouseLeave={() => setIsFocused("")}
             className={`sp__a ${isFocused === "Contact" ? "sp__selected" : ""}`}
-            href="/contact"
+            to="/contact"
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
