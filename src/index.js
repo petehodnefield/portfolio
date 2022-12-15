@@ -5,7 +5,7 @@ import StartPage from "../src/pages/StartPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProjectsFull from "../src/pages/ProjectsFull";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ThankYou from "./pages/ThankYou.js";
 import ProjectPage from "./pages/ProjectPage";
 import NotFound from "./pages/NotFound";
