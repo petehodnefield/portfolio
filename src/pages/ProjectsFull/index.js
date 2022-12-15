@@ -20,7 +20,7 @@ const ProjectsFull = () => {
         return;
       }
     });
-  }, []);
+  }, [chosenProject]);
 
   return (
     <div>
