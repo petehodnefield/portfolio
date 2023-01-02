@@ -590,6 +590,7 @@ ul {
   text-align: center;
   font-size: 0.75rem;
 }
+
 .project-img-wrapper {
   margin: 1.5rem 1rem 1rem;
   position: relative;
@@ -661,6 +662,15 @@ ul {
   }
   .project-grid__card {
     width: 100%;
+  }
+  .project-text-wrapper {
+    flex-grow: 1.5;
+    width: 0;
+  }
+  .project-img-wrapper {
+    width: 0;
+    flex-grow: 1;
+    height: 15rem;
   }
 }
 
@@ -959,6 +969,9 @@ ul {
   .project__ul {
     width: 25rem;
   }
+  .project-img-wrapper {
+    height: 20rem;
+  }
 }
 @media screen and (min-width: 1440px) {
   .header {
@@ -983,5 +996,15 @@ ul {
   }
   .project-img-wrapper {
     max-height: 30rem;
+  }
+  .project-img-wrapper {
+    height: 25rem;
+    box-shadow: none;
+  }
+  .project__img {
+    height: 20rem;
+    object-fit: contain;
+    display: flex;
+    align-items: flex-start;
   }
 }

@@ -23,7 +23,10 @@ const ProjectModalSmall = ({ selectedProject }) => {
           <p className="p3 project-modal__description ">
             {selectedProject.description}
           </p>
-          <img className="project-modal__img" src={selectedProject.image} />
+          <img
+            className="project-modal__img"
+            src={require(`../assets/photos/${selectedProject.image}`)}
+          />
         </div>
       </Link>
     </div>

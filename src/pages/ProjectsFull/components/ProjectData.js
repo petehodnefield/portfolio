@@ -3,7 +3,7 @@ import { useWindowDimensions } from "../../../components/utils/WindowDimesions";
 
 const ProjectData = ({ project, isOpen, setIsOpen }) => {
   const currentWidth = useWindowDimensions();
-
+  const link = "../../../assets/photos/" + project.image;
   return (
     <section
       className={`project-data-wrapper ${
@@ -22,13 +22,17 @@ const ProjectData = ({ project, isOpen, setIsOpen }) => {
           >
             <button className="btn btn-secondary btn-deploy">Repository</button>
           </a>
-          <a
-            className="project__link"
-            target="_blank"
-            href={project.liveDeployment}
-          >
-            <button className="btn btn-secondary btn-deploy">Live</button>
-          </a>
+          {!project.liveDeployment ? (
+            ""
+          ) : (
+            <a
+              className="project__link"
+              target="_blank"
+              href={project.liveDeployment}
+            >
+              <button className="btn btn-secondary btn-deploy">Live</button>
+            </a>
+          )}
         </div>
         <div className="project-tech-wrapper">
           <h5 className="project__tech-header">Tech used</h5>
@@ -40,7 +44,10 @@ const ProjectData = ({ project, isOpen, setIsOpen }) => {
         </div>
       </div>
       <div className="project-img-wrapper bshadow">
-        <img className="project__img " src={project.image} />
+        <img
+          className="project__img "
+          src={require(`../../../assets/photos/${project.image}`)}
+        />
       </div>
     </section>
   );
