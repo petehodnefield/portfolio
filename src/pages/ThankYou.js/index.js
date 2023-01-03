@@ -2,7 +2,7 @@ import React from "react";
 
 const ThankYou = () => {
   setTimeout(() => {
-    window.location.assign("/about");
+    window.location.assign("#/about");
   }, 2000);
   return (
     <div className="thank-you-wrapper">

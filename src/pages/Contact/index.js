@@ -22,7 +22,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    window.location.assign("/thank-you");
+    window.location.assign("#/thank-you");
   };
   return (
     <div>
@@ -37,7 +37,7 @@ const Contact = () => {
         >
           <div className="form__content-wrapper">
             <div className="form__input-wrapper">
-              <label className="form__label">Name</label>
+              <label className="form__label bold">Name</label>
               <input
                 required
                 name="name"
@@ -47,7 +47,7 @@ const Contact = () => {
               ></input>
             </div>
             <div className="form__input-wrapper">
-              <label className="form__label">Email address</label>
+              <label className="form__label bold">Email address</label>
               <input
                 required
                 name="email"
@@ -57,7 +57,7 @@ const Contact = () => {
               ></input>
             </div>
             <div className="form__input-wrapper">
-              <label className="form__label">Subject</label>
+              <label className="form__label bold">Subject</label>
               <input
                 required
                 name="subject"
@@ -67,7 +67,7 @@ const Contact = () => {
               ></input>
             </div>
             <div className="form__input-wrapper">
-              <label className="form__label">Message</label>
+              <label className="form__label bold">Message</label>
               <textarea
                 resi
                 name="message"

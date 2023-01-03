@@ -13,8 +13,9 @@ const MusicProjects = ({ isOpen, setIsOpen }) => {
               target="_blank"
               href={project.link}
             >
-              <h3 className="project__card-name ">{project.name}</h3>
-              <img className="project__card-img" src={project.img} />
+              <Icon className="project__card-icon" icon={project.icon} />
+
+              <p1 className="project__card-name ">{project.name}</p1>
             </a>
           </div>
         ))}

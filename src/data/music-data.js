@@ -7,20 +7,20 @@ export const musicData = [
     logLine: "Data for music producers",
     description: "Every song I have worked on",
     link: "https://open.spotify.com/playlist/1GHkXFTgtiWDUdHJzIJHIO?si=613a5912699e4f11",
-    img: SIWO,
+    icon: "mdi:spotify",
   },
   {
     name: "Airbit store",
     logLine: "Data for music producers",
     description: "A collection of my royalty free guitar loops",
     link: "https://mongamonga.infinity.airbit.com/",
-    img: airbit,
+    icon: "ri:headphone-fill",
   },
   {
     name: "TikTok",
     logLine: "Data for music producers",
     description: "A collection of my royalty free guitar loops",
     link: "https://www.tiktok.com/@mongamonga_?lang=en",
-    img: tiktok,
+    icon: "ic:outline-tiktok",
   },
 ];

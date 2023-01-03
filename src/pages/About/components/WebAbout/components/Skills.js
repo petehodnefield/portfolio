@@ -25,16 +25,12 @@ const Skills = () => {
       <div className="skills-list-wrapper">
         <ul className="skills__ul">
           {frontEndSkills.map((skill) => (
-            <li className="p4 skills__li">
-              <span className="skills__front-end">{skill}</span>
-            </li>
+            <li className="p3 skills__li skills__front-end">{skill}</li>
           ))}
         </ul>
         <ul className="skills__ul">
           {backEndSkills.map((skill) => (
-            <li className="p4 skills__li">
-              <span className="skills__back-end">{skill}</span>
-            </li>
+            <li className="p3 skills__li skills__back-end">{skill}</li>
           ))}
         </ul>
       </div>

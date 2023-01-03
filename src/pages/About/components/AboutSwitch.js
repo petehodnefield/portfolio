@@ -17,7 +17,7 @@ const AboutSwitch = ({ aboutSwitch, setAboutSwitch }) => {
           ></div>
         </div>
       </div>
-      <p className="p3"> {aboutSwitch ? "Music Producer" : "Web Devloper"}</p>
+      <p className="p2"> {aboutSwitch ? "Music Producer" : "Web Devloper"}</p>
     </div>
   );
 };
