@@ -1,10 +1,3 @@
-import { Icon } from "@iconify/react";
-import meloroids from "../assets/photos/meloroids-img.png";
-import weather from "../assets/photos/weather-img.jpg";
-import unleashed from "../assets/photos/unleashed.jpg";
-import nba from "../assets/photos/nba-img.jpg";
-import mongamonga from "../assets/photos/mongamonga.png";
-import akemi from "../assets/photos/akemi.png";
 export const projectData = [
   {
     name: "mongamonga_",
@@ -65,7 +58,7 @@ export const projectData = [
     logLine: "Hub for DEI events",
     description:
       "DEI Calendar is a place for employees to learn about upcoming cultural festivals and holidays to enable them to connect with each other to plan for celebrations. Employees / Users will be able to express their interest in participating in an event or celebration.",
-    image: "unleashed.jpg",
+    image: "dei.png",
     icon: "material-symbols:calendar-month",
     repository: "https://github.com/petehodnefield/project-three",
     liveDeployment: null,
