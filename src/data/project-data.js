@@ -1,16 +1,5 @@
 export const projectData = [
   {
-    name: "mongamonga_",
-    logLine: "How I collaborate with other producers",
-    description:
-      "mongamonga_ is my personal music producer site. It contains all of my royalty-free and other guitar loops for producers to download, as well as the relevant licenses. Established producers can fill out the form  on the main page to set up custom guitar work collaborations.",
-    image: "mongamonga.jpg",
-    icon: "fa6-solid:guitar",
-    repository: "https://github.com/petehodnefield/beat-store-react",
-    liveDeployment: "https://www.mongamonga.com",
-    technology: ["React.js", "CSS"],
-  },
-  {
     name: "Akemi",
     logLine: "Artist site for French singer Akemi",
     description:
@@ -30,8 +19,19 @@ export const projectData = [
 
     icon: "material-symbols:queue-music-rounded",
     repository: "https://github.com/petehodnefield/meloroids",
-    liveDeployment: null,
+    liveDeployment: "https://www.meloroids.io",
     technology: ["React.js", "CSS", "Express.js", "MongoDB", "GraphQL"],
+  },
+  {
+    name: "mongamonga_",
+    logLine: "How I collaborate with other producers",
+    description:
+      "mongamonga_ is my personal music producer site. It contains all of my royalty-free and other guitar loops for producers to download, as well as the relevant licenses. Established producers can fill out the form  on the main page to set up custom guitar work collaborations.",
+    image: "mongamonga.jpg",
+    icon: "fa6-solid:guitar",
+    repository: "https://github.com/petehodnefield/beat-store-react",
+    liveDeployment: "https://www.mongamonga.com",
+    technology: ["React.js", "CSS"],
   },
   {
     name: "Unleashed",
