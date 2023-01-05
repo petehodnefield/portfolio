@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.797ab921.css",
-    "main.js": "/portfolio/static/js/main.35b70fc0.js",
+    "main.js": "/portfolio/static/js/main.f1e13ad7.js",
     "static/media/tiktok.png": "/portfolio/static/media/tiktok.7596190a6671686d8a16.png",
     "static/media/akemi.png": "/portfolio/static/media/akemi.7fb99cf66aae32e8b5ae.png",
     "static/media/mongamonga.png": "/portfolio/static/media/mongamonga.5e9e0a6b76b3f33eb3ed.png",
@@ -16,13 +16,13 @@
     "static/media/akemi.jpg": "/portfolio/static/media/akemi.b252668ade12f1fb7d86.jpg",
     "static/media/meloroids-img.jpg": "/portfolio/static/media/meloroids-img.2dcb2ad8980d027154d9.jpg",
     "static/media/dei.png": "/portfolio/static/media/dei.7497333e763bbf72f664.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.33104b04ff650c3c2027.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.c1e5440d0b26498f6a4d.pdf",
     "index.html": "/portfolio/index.html",
     "main.797ab921.css.map": "/portfolio/static/css/main.797ab921.css.map",
-    "main.35b70fc0.js.map": "/portfolio/static/js/main.35b70fc0.js.map"
+    "main.f1e13ad7.js.map": "/portfolio/static/js/main.f1e13ad7.js.map"
   },
   "entrypoints": [
     "static/css/main.797ab921.css",
-    "static/js/main.35b70fc0.js"
+    "static/js/main.f1e13ad7.js"
   ]
 }
