@@ -3,12 +3,14 @@ import React from "react";
 const Skills = () => {
   const frontEndSkills = [
     "JavaScript ES6",
+    "TypeScript",
     "React.js",
     "JQuery",
     "Handlebars.js",
     "HTML5",
     "CSS3",
     "Bootstrap",
+    "Tailwind",
   ];
   const backEndSkills = [
     "Express.js",
