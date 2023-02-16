@@ -1,5 +1,15 @@
 export const projectData = [
   {
+    name: "Brews With Brule",
+    logLine: "Fictional website for beer enthusiasts.",
+    description: "Brews with Brule is an online community of beer enthusiasts who gather around breweries in the Twin Cities. The website provides a platform for members to connect with each other, share information about local breweries and events, and make new friends. Users can add friends and make posts about past events. Whether you're a seasoned beer connoisseur or just getting started, Brews with Brule is the perfect place to connect with others who share your passion for craft beer in the Twin Cities. LOGIN INFO: USERNAME: 'testuser' PASSWORD: 'password",   
+    image: "bwb.jpg",
+    icon: "lucide:beer",
+    repository: "https://github.com/petehodnefield/brews-with-brule",
+    liveDeployment: "https://bwb-frontend.vercel.app/",
+    technology: ["React.js", "Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "GraphQL"],
+  },
+  {
     name: "Akemi",
     logLine: "Artist site for French singer Akemi",
     description:
@@ -14,7 +24,7 @@ export const projectData = [
     name: "Meloroids",
     logLine: "Data for music producers",
     description:
-      "Meloroids Is the world's best resource for music producers to write accurate and high-volume melody loops for artists. Meloroids Is a daatabase that contains information about an artist's discography, such as song key, chord progression, and tempo.It shows the frequency at which an artist uses this information in their songs, making it incredibly easy to produce loops in that proper style.",
+      "Meloroids is the world's best resource for music producers to write accurate and high-volume melody loops for artists. Meloroids is a database that contains information about an artist's discography, such as song key, chord progression, and tempo. It shows the frequency at which an artist uses this information in their songs, making it incredibly easy to produce loops in that proper style.",
     image: "meloroids-img.jpg",
 
     icon: "material-symbols:queue-music-rounded",
